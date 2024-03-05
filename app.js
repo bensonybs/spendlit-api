@@ -12,7 +12,7 @@ const cors = require('cors')
 const swaggerFile = fs.readFileSync('./swagger.yaml', 'utf-8')
 const swaggerDocument = YAML.parse(swaggerFile)
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8080
 
 app.use(cors())
 app.use(express.json())
