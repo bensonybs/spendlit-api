@@ -2,8 +2,8 @@ openapi: 3.0.0
 servers:
   - description: Local
     url: http://localhost:3000/api/v1
-  - description: Zeabur
-    url: https://spendlit.zeabur.app/api/v1
+  - description: GCP
+    url: https://spendlit-api-trww6pqemq-de.a.run.app/api/v1
 info:
   description: Backend API document of SpendLit app
   version: "1.0.0"
