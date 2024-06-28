@@ -1,17 +1,17 @@
 openapi: 3.0.0
 servers:
-  - description: Local
+  - description: Online Server
+    url: This value will be replaced in app runtime
+  - description: Local Host
     url: http://localhost:3000/api/v1
-  - description: GCP
-    url: https://spendlit-api-trww6pqemq-de.a.run.app/api/v1
 info:
   description: Backend API document of SpendLit app
   version: "1.0.0"
   title: SpendLit API
   contact:
-    name: Benson Ye
-    email: yehbo0921@gmail.com
-    url: https://github.com/bensonybs/spendlitAPI
+    name: bensonybs
+    email: yebinshuo@gmail.com
+    url: https://github.com/bensonybs/spendlit-api
 tags:
   - name: Users
     description: 使用者操作
