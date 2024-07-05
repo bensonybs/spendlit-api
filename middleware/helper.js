@@ -23,8 +23,7 @@ const helper = {
    * Dynamically change the content in swagger.yaml
   */
   updateSwaggerDocumentURL: (req, res, next) => {
-    const port = process.env.PORT || 3000
-    const requestHostName = `${req.protocol}://${req.hostname}:${port}`;
+    const requestHostName = `https://${req.hostname}`;
     const swaggerFile = fs.readFileSync('./swagger.yaml', 'utf-8');
     const swaggerDocument = YAML.parse(swaggerFile);
     // Check swagger.yaml

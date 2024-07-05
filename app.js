@@ -23,7 +23,7 @@ app.use(apiDocPath, updateSwaggerDocumentURL, swaggerUi.serve, swaggerUi.setup()
 // Test route for the service
 responseStr =`<h1>This is spendlit API speaking.
   <br><br>Go to <a href="https://github.com/bensonybs/spendlit-api">Github</a> or 
-  <a href=".${apiDocPath}">Swagger API Document</a> for more infomations.</h1>`
+  <a href=".${apiDocPath}">Swagger API Document</a> for more informations.</h1>`
 app.get('/', (req, res) => {
   res.send(responseStr)
 })
